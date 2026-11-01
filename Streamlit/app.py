@@ -28,6 +28,7 @@ def apply_kinpaku_theme():
     }
     .stApp { background: var(--ink); color: var(--text); }
     .stApp, .stApp * { font-family: "Avenir Next", "Segoe UI", sans-serif; }
+    .material-symbols-rounded, .material-symbols-outlined, [class*="material-symbols"] { font-family: "Material Symbols Rounded" !important; }
     [data-testid="stAppViewContainer"] { background: var(--ink); }
     [data-testid="stHeader"] { background: transparent; }
     [data-testid="stSidebar"] { background: #0a0907; border-right: 1px solid var(--line); }

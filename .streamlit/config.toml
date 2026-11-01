@@ -10,6 +10,3 @@ chartSequentialColors = ["#15130f", "#1c2926", "#25413b", "#315d56", "#3d7a71", 
 
 [browser]
 gatherUsageStats = false
-
-[client]
-toolbarMode = "minimal"
