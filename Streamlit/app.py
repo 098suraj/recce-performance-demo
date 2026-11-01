@@ -32,6 +32,7 @@ def apply_kinpaku_theme():
     [data-testid="stAppViewContainer"] { background: var(--ink); }
     [data-testid="stHeader"] { background: transparent; }
     [data-testid="stSidebar"] { background: #0a0907; border-right: 1px solid var(--line); }
+    [data-testid="stSidebarCollapsedControl"] { display: none; }
     [data-testid="stSidebar"] > div:first-child { padding: 1.35rem .85rem; }
     [data-testid="stSidebar"] h2 { color: var(--text); letter-spacing: -.015em; font-size: 1.05rem; margin: .3rem .5rem .2rem; }
     [data-testid="stSidebar"] h2 + div p { color: var(--muted); font-size: .78rem; margin: 0 .5rem 1.7rem; }
