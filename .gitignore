@@ -1,0 +1,6 @@
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+Inputs/follow_up_actions.csv
+.streamlit/secrets.toml
+__pycache__/
+*.pyc

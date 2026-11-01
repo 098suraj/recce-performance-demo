@@ -1,0 +1,12 @@
+[theme]
+base = "dark"
+primaryColor = "#f1c95d"
+backgroundColor = "#0c0b09"
+secondaryBackgroundColor = "#15130f"
+textColor = "#f4f1e8"
+font = "sans serif"
+chartCategoricalColors = ["#69c9bd", "#f1c95d", "#efbc5b", "#ed806d", "#c8c2b6"]
+chartSequentialColors = ["#15130f", "#1c2926", "#25413b", "#315d56", "#3d7a71", "#4d978c", "#69c9bd", "#8bdbd2", "#b0ebe3", "#d7f7f1"]
+
+[browser]
+gatherUsageStats = false
