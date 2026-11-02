@@ -1,4 +1,5 @@
 from pathlib import Path
+import sys
 import altair as alt
 import pandas as pd
 import streamlit as st
@@ -6,7 +7,9 @@ import streamlit as st
 st.set_page_config(page_title="Corps Recce Performance", page_icon="◈", layout="wide", initial_sidebar_state="expanded")
 ROOT=Path(__file__).resolve().parents[1]; BOOK=ROOT/'Inputs'/'Step1_model_setup.xlsx'
 FOLLOW_UP_ACTIONS=ROOT/'Inputs'/'follow_up_actions.csv'
-PAGES=['Home','Participants','Events','Progress','Follow-up']
+if str(ROOT) not in sys.path: sys.path.insert(0,str(ROOT))
+from DataEntry import app as data_entry
+PAGES=['Home','Participants','Events','Progress','Follow-up','Data Entry']
 
 def apply_kinpaku_theme():
     """Presentation-only Data Terminal styling for native Streamlit controls and views."""
@@ -259,4 +262,5 @@ def main():
     elif page=='Event Analysis':event_analysis(d,method)
     elif page=='Progress':progress(d,method)
     elif page=='Follow-up':followup(d,method)
+    elif page=='Data Entry':data_entry.render()
 main()
